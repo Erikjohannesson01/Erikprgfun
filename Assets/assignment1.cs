@@ -4,34 +4,30 @@ using UnityEngine;
 
 public class assignment1 : ProcessingLite.GP21
 {
+    public Vector2 Cirkel;
+    public float D = 7;
+    public Vector2 Rectangel;
+    public float R = 6;
+    public float E = 13;
 
     
+
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-        //for (int i = 0; i < 10; i++)
-        //{
-        //    Debug.Log("Hej nummer: " + i);
-        //}
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
 
         Background(Color.black);
+        
         
         LetterE();
         LetterR();
         LetterI();
         LetterK();
         Shape1();
+        Shape2();
         
 
-        //Hi
+        
 
     }
 
@@ -46,7 +42,7 @@ public class assignment1 : ProcessingLite.GP21
     }
 
     private void LetterR()
-    {
+    { 
         Line(8, 3, 8, 5);
         Line(8, 4.5f, 8.5f, 5.05f);
         Line(8.5f, 5.05f, 9, 4.5f);
@@ -68,13 +64,22 @@ public class assignment1 : ProcessingLite.GP21
 
     private void Shape1()
     {
-        
-        Rect(1, 4, 2, 1);
 
-        Circle(13, 15, 14);
+        
+        Circle(2, 2, D);
+        
+        Rect(9, 9, E, E);
+
+        Fill(45, 152, 12);
         
     }
 
+    private void Shape2()
+    {
+        Rect(4, 4, R, R);
+
+        Fill(40, 12, 152);
+    }
 
 
     
