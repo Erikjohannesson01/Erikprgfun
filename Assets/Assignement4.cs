@@ -21,7 +21,7 @@ public class Assignement4 : ProcessingLite.GP21
 
         cirkel2.x = Width / 4;
         cirkel2.y = Height / 2;
-            
+        
     }
 
     // Update is called once per frame
@@ -96,8 +96,9 @@ public class Assignement4 : ProcessingLite.GP21
         cirkel2.y += acceleration.y;
 
         Circle(cirkel.x, cirkel.y, diameter);
-
+        Fill(0, 255, 0);
         Circle(cirkel2.x, cirkel2.y, diameter);
+        Fill(0, 0, 255);
 
         Debug.Log("1: " + cirkel);
         Debug.Log("2: " + cirkel2);
