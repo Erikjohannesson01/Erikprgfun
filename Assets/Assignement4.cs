@@ -86,22 +86,10 @@ public class Assignement4 : ProcessingLite.GP21
         {
             acceleration.y = 0;
         }
-        
-        if (acceleration.x >= 0.2f)
+
+        if (acceleration.magnitude > 0.2f)
         {
-            acceleration.x = 0.2f;
-        }
-        if (acceleration.x <= -0.2f)
-        {
-            acceleration.x = -0.2f;
-        }
-        if (acceleration.y >= 0.2f)
-        {
-            acceleration.y = 0.2f;
-        }
-        if (acceleration.y <= -0.2f)
-        {
-            acceleration.y = -0.2f;
+            acceleration = acceleration.normalized * 0.2f;
         }
 
         cirkel2.x += acceleration.x;
