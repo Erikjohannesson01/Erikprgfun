@@ -43,7 +43,7 @@ public class Assignement4 : ProcessingLite.GP21
             acceleration.x += snabbare * Time.deltaTime;
         }
         
-        else if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             cirkel.y += -fart * Time.deltaTime;
             acceleration.y += -snabbare * Time.deltaTime;

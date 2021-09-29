@@ -159,12 +159,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 874955208f8eb374e93a988678bb327e, type: 3}
+  m_Script: {fileID: 11500000, guid: ccae19679b9958840ae26b3bb5dceef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cirkel: {x: 0, y: 0}
-  cirkel2: {x: 0, y: 0}
-  acceleration: {x: 0, y: 0}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
