@@ -7,6 +7,7 @@ class Example : IRandomWalker
 	//Add your own variables here.
 	//Do not use processing variables like width or height
 
+
 	public string GetName()
 	{
 		return "Erik"; //When asked, tell them our walkers name
