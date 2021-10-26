@@ -8,6 +8,10 @@ class Example : IRandomWalker
 	//Do not use processing variables like width or height
 
 
+	public Vector2 position;
+	public int PlayH;
+	public int PlayW;
+
 	public string GetName()
 	{
 		return "Erik"; //When asked, tell them our walkers name
@@ -31,13 +35,41 @@ class Example : IRandomWalker
 		switch (Random.Range(0, 4))
 		{
 			case 0:
-				return new Vector2(-1, 0);
+				if (position.x == 0)
+				{
+					return new Vector2(1, 0);
+				}
+				else
+				{
+					return new Vector2(-1, 0);
+				}
 			case 1:
-				return new Vector2(1, 0);
+				if (position.x == PlayW)
+				{
+					return new Vector2(-1, 0);
+				}
+				else
+				{
+					return new Vector2(1, 0);
+				}
 			case 2:
-				return new Vector2(0, 1);
+				if (position.y == PlayH)
+				{
+					return new Vector2(0, -1);
+				}
+				else
+				{
+					return new Vector2(0, 1);
+				}
 			default:
-				return new Vector2(0, -1);
+				if (position.y == 0)
+				{
+					return new Vector2(0, 1);
+				}
+				else
+				{
+					return new Vector2(0, -1);
+				}
 		}
 	}
 }
